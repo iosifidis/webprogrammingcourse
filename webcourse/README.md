@@ -2,7 +2,7 @@
 sort: 1
 ---
 
-# Υλικό για μαθήματα Web programming
+# Υλικό μαθημάτων Web programming
 
 ```
 {% raw %}{% include list.liquid all=true %}{% endraw %}
