@@ -1,0 +1,122 @@
+# index.html
+
+*(Ο σκελετός της σελίδας, με όλα τα απαραίτητα στοιχεία για το CSS και τη JavaScript)*
+
+```html
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Το βιογραφικό μου</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&display=swap" rel="stylesheet">
+    <!-- Our Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Ιωάννα Παπαδοπούλου</h1>
+                <p>Web Developer & λάτρης της τεχνολογίας</p>
+            </div>
+            <button id="theme-toggle-btn" aria-label="Toggle dark mode">🌙</button>
+            <nav>
+                <ul>
+                    <li><a href="#about">Σχετικά</a></li>
+                    <li><a href="#experience">Εμπειρία</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Επικοινωνία</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about">
+                <h2>Σχετικά με μένα</h2>
+                <img src="https://i.pravatar.cc/150?img=32" alt="Μια φωτογραφία του Γιάννη Παπαδόπουλου" class="profile-pic">
+                <p>Είμαι ένας παθιασμένος προγραμματιστής με ιδιαίτερη αγάπη για τη δημιουργία καθαρών και λειτουργικών ιστοσελίδων. Μου αρέσει να λύνω προβλήματα και να μαθαίνω συνεχώς νέες τεχνολογίες.</p>
+            </section>
+            
+            <section id="experience">
+                <h2>Εμπειρία & Δεξιότητες</h2>
+                <div class="experience-skills-grid">
+                    <div class="experience-column">
+                        <h3>Επαγγελματική Εμπειρία</h3>
+                        <article>
+                            <h4>Web Developer - Tech Company (2020 - Σήμερα)</h4>
+                            <ul>
+                                <li>Ανάπτυξη και συντήρηση front-end εφαρμογών με React.</li>
+                                <li>Συνεργασία με την ομάδα UX/UI για τη βελτίωση του user experience.</li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="skills-column">
+                        <h3>
+                            Τεχνικές Δεξιότητες
+                            <button id="toggle-skills-btn">-/+</button>
+                        </h3>
+                        <ul id="skills-list">
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>Git & GitHub</li>
+                            <li>Responsive Design</li>
+                            <li>Flexbox & Grid</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+                <div id="gallery-container">
+                    <!-- Οι εικόνες θα προστεθούν εδώ από τη JS -->
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Επικοινωνία</h2>
+                <p>Θα χαρώ να ακούσω νέα σας!</p>
+                <form id="contact-form" novalidate>
+                    <div id="form-error-msg" class="error-text"></div>
+                    <div class="form-group">
+                        <label for="name">Όνομα:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Μήνυμα:</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+                    <button type="submit">Αποστολή</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <section id="quotes">
+                <h3>Απόφθεγμα της Ημέρας</h3>
+                <blockquote id="quote-text">Loading...</blockquote>
+                <p id="quote-author"></p>
+                <button id="new-quote-btn">Νέο Απόφθεγμα</button>
+            </section>
+            <p>&copy; 2025 Ιωάννα Παπαδοπούλου. Όλα τα δικαιώματα κατοχυρωμένα.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+```
+
+Λήψη: [index.html](index.html)
+
+source: `{{ page.path }}`
