@@ -2,7 +2,7 @@
 sort: 2
 ---
 
-# Αρχεία
+# Κώδικες
 
 ```liquid
 {% raw %}{% include list.liquid all=true %}{% endraw %}
