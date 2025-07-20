@@ -1,8 +1,3 @@
-# script.js
-
-*(Η καρδιά της εφαρμογής. Περιλαμβάνει την επικοινωνία με το API, τον χειρισμό των δεδομένων και την ενημέρωση της σελίδας.)*
-
-```javascript
 // ΣΗΜΑΝΤΙΚΟ: Αντικαταστήστε αυτό με το δικό σας, προσωπικό API Key από το openweathermap.org
 const apiKey = 'YOUR_SECRET_API_KEY'; 
 
@@ -82,9 +77,3 @@ function displayWeatherData(data) {
     // Εμφανίζουμε το κοντέινερ των πληροφοριών
     weatherDisplay.classList.remove('hidden');
 }
-
-```
-
-Λήψη: [script.js](script.js)
-
-source: `{{ page.path }}`
