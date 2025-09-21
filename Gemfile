@@ -23,7 +23,9 @@ group :jekyll_plugins do
   gem "jekyll-avatar", "~> 0.8.0"
   gem "jekyll-mentions", "~> 1.6.0"
   gem "jemoji", "~> 0.13.0"
-  gem "github-pages", "~> 232"
+  #gem "github-pages", "~> 232"
+  # Αφαιρέσαμε το github-pages και προσθέτουμε το jekyll-github-metadata απευθείας
+  gem "jekyll-github-metadata"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
